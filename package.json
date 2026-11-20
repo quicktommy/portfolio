@@ -1,0 +1,27 @@
+{
+  "name": "templateglisse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@phosphor-icons/react": "^2.1.10",
+    "glisse": "^0.6.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "vite": "^8.3.8"
+  }
+}
