@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { Button, TabBar } from "glisse";
 import { SunIcon, MoonIcon } from "@phosphor-icons/react";
+import { Analytics } from "@vercel/analytics/react";
 
 const projects = [
   {
@@ -92,10 +93,12 @@ function App() {
   }
 
   return (
-    <main className="page-scene" data-glisse-backdrop>
-      <div className="ambient ambient-blue" />
-      <div className="ambient ambient-purple" />
-      <div className="ambient ambient-pink" />
+    <>
+      <Analytics />
+      <main className="page-scene" data-glisse-backdrop>
+        <div className="ambient ambient-blue" />
+        <div className="ambient ambient-purple" />
+        <div className="ambient ambient-pink" />
 
       <div className="container">
         <div className="nav-wrapper">
@@ -238,7 +241,8 @@ function App() {
           © {new Date().getFullYear()} Tomás Durães
         </footer>
       </div>
-    </main>
+      </main>
+    </>
   );
 }
 
