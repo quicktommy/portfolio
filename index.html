@@ -5,16 +5,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#1c1c1e" />
-    <meta name="description" content="Tomás Durães is a backend developer and technology enthusiast interested in programming, Linux, macOS and computer systems." />
+
+    <meta name="description"
+          content="Portfolio of Tomás Durães, a programming student and junior software developer interested in Linux, macOS, systems and AI-assisted development." />
     <meta name="author" content="Tomás Durães" />
-    <link rel="canonical" href="https://tomasduraes-portfolio.vercel.app/" />
+
+    <link rel="canonical"
+          href="https://tomasduraes-portfolio.vercel.app/" />
+
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Tomás Durães | Backend Developer" />
-    <meta property="og:description" content="Personal portfolio of Tomás Durães, a backend developer and technology enthusiast." />
-    <meta property="og:url" content="https://tomasduraes-portfolio.vercel.app/" />
+    <meta property="og:title"
+          content="Tomás Durães | Junior Software Developer" />
+    <meta property="og:description"
+          content="Programming student and technology enthusiast exploring software development, Linux, macOS and computer systems." />
+    <meta property="og:url"
+          content="https://tomasduraes-portfolio.vercel.app/" />
+
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Tomás Durães | Backend Developer" />
-    <meta name="twitter:description" content="Personal portfolio of Tomás Durães, a backend developer and technology enthusiast." />
+    <meta name="twitter:title"
+          content="Tomás Durães | Junior Software Developer" />
+    <meta name="twitter:description"
+          content="Programming student and technology enthusiast exploring software development, Linux, macOS and computer systems." />
 
     <script type="application/ld+json">
         {
@@ -22,28 +33,39 @@
             "@type": "Person",
             "name": "Tomás Durães",
             "url": "https://tomasduraes-portfolio.vercel.app/",
-            "jobTitle": "Backend Developer",
-            "description": "Student and technology enthusiast interested in programming, Linux, macOS and computer systems.",
+            "description": "Programming student and technology enthusiast interested in software development, Linux, macOS, computer systems and AI-assisted development.",
             "email": "mailto:tomas.duraes2009@gmail.com",
-            "sameAs": ["https://github.com/quicktommy"],
-            "knowsAbout": ["NixOS", "Hyprland", "Zsh", "OpenCore", "EFI", "macOS", "Git", "GitHub"]
+            "sameAs": [
+                "https://github.com/quicktommy"
+            ],
+            "knowsAbout": [
+                "NixOS",
+                "Hyprland",
+                "Zsh",
+                "OpenCore",
+                "EFI",
+                "macOS",
+                "Git",
+                "GitHub",
+                "AI-assisted development"
+            ]
         }
     </script>
 
     <script>
         (() => {
-            const platform =
-                navigator.userAgentData?.platform ||
-                navigator.platform ||
-                "";
+        const platform =
+        navigator.userAgentData?.platform ||
+        navigator.platform ||
+        "";
 
-            const isWindowsOrMac = /Windows|Win|Mac/i.test(platform);
-            const prefersLight = window.matchMedia(
-                "(prefers-color-scheme: light)"
-            ).matches;
+        const isWindowsOrMac = /Windows|Win|Mac/i.test(platform);
+        const prefersLight = window.matchMedia(
+        "(prefers-color-scheme: light)"
+        ).matches;
 
-            document.documentElement.dataset.theme =
-                isWindowsOrMac && prefersLight ? "light" : "dark";
+        document.documentElement.dataset.theme =
+        isWindowsOrMac && prefersLight ? "light" : "dark";
         })();
     </script>
 
@@ -53,20 +75,55 @@
 </head>
 <body>
     <div id="root"></div>
+
     <noscript>
         <main>
             <h1>Tomás Durães</h1>
-            <p>Backend developer and technology enthusiast interested in programming, Linux, macOS and computer systems.</p>
+
+            <p>
+                Programming student and junior software developer
+                interested in Linux, macOS and computer systems.
+            </p>
+
             <h2>Projects</h2>
             <ul>
-                <li><a href="https://github.com/quicktommy/nixos-config">NixOS Configuration</a> — a customized Linux environment using NixOS and Hyprland.</li>
-                <li><a href="https://github.com/quicktommy/IdeaPad-Gaming-3-15ARH05-Hackintosh">Hackintosh Tahoe EFI</a> — OpenCore and macOS experiments on non-Apple hardware.</li>
+                <li>
+                    <a href="https://github.com/quicktommy/nixos-config">
+                        NixOS Configuration
+                    </a>
+                    - A customized Linux environment using NixOS and Hyprland.
+                </li>
+                <li>
+                    <a href="https://github.com/quicktommy/IdeaPad-Gaming-3-15ARH05-Hackintosh">
+                        Hackintosh Tahoe EFI
+                    </a>
+                    - OpenCore and macOS experiments on non-Apple hardware.
+                </li>
             </ul>
+
+            <h2>Development approach</h2>
+            <p>
+                Uses AI-assisted development tools for exploration
+                and prototyping, with code review, testing and refinement.
+            </p>
+
             <h2>Skills</h2>
-            <p>NixOS, Hyprland, Zsh, OpenCore, EFI, macOS, Git and GitHub.</p>
-            <p><a href="mailto:tomas.duraes2009@gmail.com">Contact Tomás Durães</a> · <a href="https://github.com/quicktommy">GitHub</a></p>
+            <p>
+                NixOS, Hyprland, Zsh, OpenCore, EFI, macOS, Git and GitHub.
+            </p>
+
+            <p>
+                <a href="mailto:tomas.duraes2009@gmail.com">
+                    Contact Tomás Durães
+                </a>
+                ·
+                <a href="https://github.com/quicktommy">
+                    GitHub
+                </a>
+            </p>
         </main>
     </noscript>
+
     <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>

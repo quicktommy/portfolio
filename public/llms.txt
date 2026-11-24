@@ -1,19 +1,38 @@
+
 # Tomás Durães
 
-> Personal portfolio of Tomás Durães, a backend developer and technology enthusiast.
+> Personal portfolio of Tomás Durães, a programming student and junior software developer interested in Linux, macOS, software development, and computer systems.
 
 ## About
 
-Tomás Durães is a student and backend developer interested in programming, Linux, macOS, and computer systems.
+Tomás Durães is a programming student and technology enthusiast focused on software development, operating systems, and the relationship between hardware and software.
+
+He enjoys experimenting with different technologies, configuring Linux environments, exploring macOS on non-Apple hardware, and building projects through practical experience.
+
+His interests include Linux system configuration, declarative infrastructure, desktop customization, and software development.
+
+## Development Approach
+
+Tomás uses AI-assisted development tools for exploring ideas, prototyping features, and speeding up implementation.
+
+AI-generated code is treated as a starting point rather than a finished product. He reviews, tests, and refines generated code as part of his development process.
+
+This approach is also referred to as vibe coding or AI-assisted development.
 
 ## Projects
 
-- [NixOS Configuration](https://github.com/quicktommy/nixos-config): Personal NixOS configuration with a customized Linux environment using Hyprland.
-- [Hackintosh Tahoe EFI](https://github.com/quicktommy/IdeaPad-Gaming-3-15ARH05-Hackintosh): Hackintosh EFI configuration and experiments with running macOS on non-Apple hardware using OpenCore.
+- [NixOS Configuration](https://github.com/quicktommy/nixos-config): Personal NixOS configuration featuring a customized Linux environment, Nix Flakes, Hyprland, Noctalia, and reusable configuration modules.
 
-## Skills
+- [Hackintosh Tahoe EFI](https://github.com/quicktommy/IdeaPad-Gaming-3-15ARH05-Hackintosh): OpenCore EFI configuration and experiments with running macOS on non-Apple hardware, including configuration work for a Lenovo IdeaPad Gaming 3.
 
-NixOS, Hyprland, Zsh, OpenCore, EFI, macOS, Git, and GitHub.
+## Skills & Technologies
+
+- Operating Systems: NixOS, Linux, macOS
+- Desktop Environment & Customization: Hyprland, Noctalia, Zsh
+- System Configuration: Nix Flakes, declarative configuration
+- Hackintosh: OpenCore, EFI
+- Development Tools: Git, GitHub
+- Development Approach: AI-assisted development, prototyping
 
 ## Contact
 

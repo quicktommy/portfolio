@@ -7,8 +7,8 @@ const projects = [
   {
     title: "NixOS Configuration",
     description:
-      "My personal NixOS configuration, featuring a customized Linux environment.",
-    tags: ["NixOS", "Hyprland", "Linux"],
+      "My personal NixOS configuration, featuring a customized and reproducible Linux environment.",
+    tags: ["NixOS", "Hyprland", "Linux", "Nix Flakes"],
     link: "https://github.com/quicktommy/nixos-config",
   },
   {
@@ -21,12 +21,19 @@ const projects = [
 ];
 
 const skills = [
-  "NixOS", "Hyprland", "Zsh", "OpenCore",
-  "EFI", "macOS", "Git", "GitHub",
+  "NixOS",
+  "Hyprland",
+  "Zsh",
+  "OpenCore",
+  "EFI",
+  "macOS",
+  "Git",
+  "GitHub",
 ];
 
 const navigation = [
   { value: "home", label: "Home" },
+  { value: "about", label: "About" },
   { value: "projects", label: "Projects" },
   { value: "skills", label: "Skills" },
   { value: "contact", label: "Contact" },
@@ -35,12 +42,10 @@ const navigation = [
 function App() {
   const [activeTab, setActiveTab] = useState("home");
 
-  // Start with the theme detected in index.html
   const [theme, setTheme] = useState(
     () => document.documentElement.dataset.theme || "dark"
   );
 
-  // Apply theme and update browser theme colour
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
 
@@ -52,7 +57,6 @@ function App() {
       );
   }, [theme]);
 
-  // Track the currently visible section while scrolling
   useEffect(() => {
     const sections = navigation
       .map(({ value }) => document.getElementById(value))
@@ -111,9 +115,11 @@ function App() {
           <Button
             variant="glass"
             icon={
-              theme === "dark"
-                ? <SunIcon weight="fill" />
-                : <MoonIcon weight="fill" />
+              theme === "dark" ? (
+                <SunIcon weight="fill" />
+              ) : (
+                <MoonIcon weight="fill" />
+              )
             }
             aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
             tint={theme === "dark" ? "#FFD60A" : "#0A84FF"}
@@ -125,18 +131,21 @@ function App() {
 
         <header id="home" className="hero">
           <span className="eyebrow">PERSONAL PORTFOLIO</span>
-          <h1>Tomás Durães<span className="blue-dot">.</span></h1>
-          <h2>Backend Developer</h2>
+          <h1>
+            Tomás Durães<span className="blue-dot">.</span>
+          </h1>
+          <h2>Junior Software Developer | Linux & Systems Enthusiast</h2>
           <p>
-            Student and technology enthusiast interested in programming,
-            Linux, macOS and computer systems.
+            Programming student and technology enthusiast interested
+            in software development, Linux, macOS and computer systems.
           </p>
 
           <div className="hero-actions">
             <Button
               variant="filled"
               onClick={() => {
-                window.location.href = "mailto:tomas.duraes2009@gmail.com";
+                window.location.href =
+                  "mailto:tomas.duraes2009@gmail.com";
               }}
             >
               Contact Me
@@ -150,6 +159,45 @@ function App() {
             </Button>
           </div>
         </header>
+
+        <section id="about">
+          <div className="section-heading">
+            <span className="eyebrow">A LITTLE ABOUT ME</span>
+            <h2>About Me</h2>
+          </div>
+
+          <div className="about-panel">
+            <p>
+              I'm a programming student with a strong interest in
+              software, operating systems and the relationship
+              between hardware and software.
+            </p>
+
+            <p>
+              I enjoy experimenting with different technologies,
+              configuring Linux environments, exploring macOS on
+              non-Apple hardware and building projects that help me
+              learn through practical experience.
+            </p>
+
+            <div className="about-divider" />
+
+            <span className="eyebrow">MY DEVELOPMENT APPROACH</span>
+            <h3>Vibe coding & AI-assisted development</h3>
+
+            <p>
+              I use AI-assisted development tools to explore ideas,
+              prototype features and speed up implementation.
+              AI-generated code is a starting point, not a finished
+              product: I review, test and refine it as part of my
+              development process.
+            </p>
+
+            <span className="glass-tag approach-tag">
+              AI-assisted development
+            </span>
+          </div>
+        </section>
 
         <section id="projects">
           <div className="section-heading">
@@ -206,13 +254,16 @@ function App() {
           <div className="contact-panel">
             <span className="eyebrow">LET'S CONNECT</span>
             <h2>Get in touch.</h2>
-            <p>Interested in my work? Feel free to reach out.</p>
+            <p>
+              Interested in my work? Feel free to reach out.
+            </p>
 
             <div className="hero-actions">
               <Button
                 variant="filled"
                 onClick={() => {
-                  window.location.href = "mailto:tomas.duraes2009@gmail.com";
+                  window.location.href =
+                    "mailto:tomas.duraes2009@gmail.com";
                 }}
               >
                 Send me an email
