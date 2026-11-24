@@ -1,0 +1,22 @@
+# Tomás Durães
+
+> Personal portfolio of Tomás Durães, a backend developer and technology enthusiast.
+
+## About
+
+Tomás Durães is a student and backend developer interested in programming, Linux, macOS, and computer systems.
+
+## Projects
+
+- [NixOS Configuration](https://github.com/quicktommy/nixos-config): Personal NixOS configuration with a customized Linux environment using Hyprland.
+- [Hackintosh Tahoe EFI](https://github.com/quicktommy/IdeaPad-Gaming-3-15ARH05-Hackintosh): Hackintosh EFI configuration and experiments with running macOS on non-Apple hardware using OpenCore.
+
+## Skills
+
+NixOS, Hyprland, Zsh, OpenCore, EFI, macOS, Git, and GitHub.
+
+## Contact
+
+- Email: tomas.duraes2009@gmail.com
+- GitHub: https://github.com/quicktommy
+- Portfolio: https://tomasduraes-portfolio.vercel.app/
