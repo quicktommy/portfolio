@@ -1,38 +1,44 @@
 
 # Tomás Durães
 
-> Personal portfolio of Tomás Durães, a programming student and junior software developer interested in Linux, macOS, software development, and computer systems.
+> Personal portfolio of Tomás Durães, a programming student and junior developer interested in backend development, Linux, macOS and computer systems.
 
 ## About
 
-Tomás Durães is a programming student and technology enthusiast focused on software development, operating systems, and the relationship between hardware and software.
+Tomás Durães is a programming student interested in software development, operating systems and the relationship between hardware and software.
 
-He enjoys experimenting with different technologies, configuring Linux environments, exploring macOS on non-Apple hardware, and building projects through practical experience.
+He enjoys experimenting with different technologies, configuring Linux environments, exploring macOS on non-Apple hardware and learning how computer systems work.
 
-His interests include Linux system configuration, declarative infrastructure, desktop customization, and software development.
+His technical interests include backend development, Linux system configuration, macOS, computer hardware and software troubleshooting.
 
 ## Development Approach
 
-Tomás uses AI-assisted development tools for exploring ideas, prototyping features, and speeding up implementation.
+Tomás uses AI-assisted development tools to explore ideas, prototype features and support implementation.
 
-AI-generated code is treated as a starting point rather than a finished product. He reviews, tests, and refines generated code as part of his development process.
+AI-generated code is treated as a starting point rather than a finished product. He reviews, tests and refines it as part of his development process.
 
-This approach is also referred to as vibe coding or AI-assisted development.
+This approach is also referred to as AI-assisted development or vibe coding.
 
 ## Projects
 
-- [NixOS Configuration](https://github.com/quicktommy/nixos-config): Personal NixOS configuration featuring a customized Linux environment, Nix Flakes, Hyprland, Noctalia, and reusable configuration modules.
+- [NixOS Configuration](https://github.com/quicktommy/nixos-config): Personal declarative NixOS configuration featuring Nix Flakes, a customized Hyprland desktop and Noctalia. Focused on reproducibility, modularity and maintainability.
 
-- [Hackintosh Tahoe EFI](https://github.com/quicktommy/IdeaPad-Gaming-3-15ARH05-Hackintosh): OpenCore EFI configuration and experiments with running macOS on non-Apple hardware, including configuration work for a Lenovo IdeaPad Gaming 3.
+- [Hackintosh Tahoe EFI](https://github.com/quicktommy/IdeaPad-Gaming-3-15ARH05-Hackintosh): OpenCore EFI project for running macOS Tahoe on a Lenovo IdeaPad Gaming 3 15ARH05 with an AMD Ryzen 5 4600H. Includes separate Recovery and Full EFI setups and Intel AX210 Wi-Fi and Bluetooth support.
 
-## Skills & Technologies
+## Technical Interests & Technologies
 
-- Operating Systems: NixOS, Linux, macOS
-- Desktop Environment & Customization: Hyprland, Noctalia, Zsh
+- Operating Systems: Linux, NixOS, macOS
+- Desktop & Customization: Hyprland, Noctalia, Zsh
 - System Configuration: Nix Flakes, declarative configuration
 - Hackintosh: OpenCore, EFI
 - Development Tools: Git, GitHub
-- Development Approach: AI-assisted development, prototyping
+- Other Interests: Backend development, computer systems, hardware troubleshooting
+- Development Approach: AI-assisted development, prototyping, code review and testing
+
+## Currently Learning
+
+- Rust: Exploring the language and learning its fundamentals.
+- SQL: Learning basic SQL syntax, queries and database concepts.
 
 ## Contact
 

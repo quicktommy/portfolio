@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#1c1c1e" />
 
     <meta name="description"
-          content="Portfolio of Tomás Durães, a programming student and junior software developer interested in Linux, macOS, systems and AI-assisted development." />
+          content="Portfolio of Tomás Durães, a programming student and junior developer interested in backend development, Linux, macOS, computer systems and hardware troubleshooting." />
     <meta name="author" content="Tomás Durães" />
 
     <link rel="canonical"
@@ -15,17 +15,17 @@
 
     <meta property="og:type" content="website" />
     <meta property="og:title"
-          content="Tomás Durães | Junior Software Developer" />
+          content="Tomás Durães | Programming Student & Junior Developer" />
     <meta property="og:description"
-          content="Programming student and technology enthusiast exploring software development, Linux, macOS and computer systems." />
+          content="Programming student interested in backend development, Linux, macOS, computer systems and hardware troubleshooting." />
     <meta property="og:url"
           content="https://tomasduraes-portfolio.vercel.app/" />
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title"
-          content="Tomás Durães | Junior Software Developer" />
+          content="Tomás Durães | Programming Student & Junior Developer" />
     <meta name="twitter:description"
-          content="Programming student and technology enthusiast exploring software development, Linux, macOS and computer systems." />
+          content="Programming student interested in backend development, Linux, macOS, computer systems and hardware troubleshooting." />
 
     <script type="application/ld+json">
         {
@@ -33,46 +33,58 @@
             "@type": "Person",
             "name": "Tomás Durães",
             "url": "https://tomasduraes-portfolio.vercel.app/",
-            "description": "Programming student and technology enthusiast interested in software development, Linux, macOS, computer systems and AI-assisted development.",
+            "jobTitle": "Programming Student and Junior Developer",
+            "description": "Programming student interested in backend development, Linux, macOS, computer systems, hardware troubleshooting and AI-assisted development.",
             "email": "mailto:tomas.duraes2009@gmail.com",
             "sameAs": [
                 "https://github.com/quicktommy"
             ],
             "knowsAbout": [
+                "Backend Development",
+                "Linux",
                 "NixOS",
+                "Nix Flakes",
                 "Hyprland",
+                "Noctalia",
                 "Zsh",
+                "macOS",
                 "OpenCore",
                 "EFI",
-                "macOS",
+                "Computer Systems",
+                "Hardware Troubleshooting",
                 "Git",
                 "GitHub",
-                "AI-assisted development"
-            ]
+                "AI-assisted Development"
+            ],
+            "hasOccupation": {
+                "@type": "Occupation",
+                "name": "Programming Student"
+            }
         }
     </script>
 
     <script>
-        (() => {
-        const platform =
-        navigator.userAgentData?.platform ||
-        navigator.platform ||
-        "";
+                (() => {
+                    const platform =
+                        navigator.userAgentData?.platform ||
+                        navigator.platform ||
+                        "";
 
-        const isWindowsOrMac = /Windows|Win|Mac/i.test(platform);
-        const prefersLight = window.matchMedia(
-        "(prefers-color-scheme: light)"
-        ).matches;
+                    const isWindowsOrMac = /Windows|Win|Mac/i.test(platform);
+                    const prefersLight = window.matchMedia(
+                        "(prefers-color-scheme: light)"
+                    ).matches;
 
-        document.documentElement.dataset.theme =
-        isWindowsOrMac && prefersLight ? "light" : "dark";
-        })();
+                    document.documentElement.dataset.theme =
+                        isWindowsOrMac && prefersLight ? "light" : "dark";
+                })();
     </script>
 
-    <title>Tomás Durães | Portfolio</title>
+    <title>Tomás Durães | Programming Student & Junior Developer</title>
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 </head>
+
 <body>
     <div id="root"></div>
 
@@ -80,41 +92,71 @@
         <main>
             <h1>Tomás Durães</h1>
 
+            <h2>Programming Student & Junior Developer</h2>
+
             <p>
-                Programming student and junior software developer
-                interested in Linux, macOS and computer systems.
+                Programming student interested in backend development,
+                Linux, macOS, computer systems and hardware troubleshooting.
+            </p>
+
+            <h2>About</h2>
+
+            <p>
+                Interested in software development, operating systems
+                and the relationship between hardware and software.
+                Enjoys configuring Linux environments, exploring macOS
+                on non-Apple hardware and diagnosing software and
+                system issues.
+            </p>
+
+            <h2>Development Approach</h2>
+
+            <p>
+                Uses AI-assisted tools for exploration and prototyping.
+                AI-generated code is reviewed, tested and refined.
             </p>
 
             <h2>Projects</h2>
+
             <ul>
                 <li>
                     <a href="https://github.com/quicktommy/nixos-config">
                         NixOS Configuration
                     </a>
-                    - A customized Linux environment using NixOS and Hyprland.
+                    - Declarative NixOS environment using Nix Flakes,
+                    Hyprland and Noctalia.
                 </li>
                 <li>
                     <a href="https://github.com/quicktommy/IdeaPad-Gaming-3-15ARH05-Hackintosh">
                         Hackintosh Tahoe EFI
                     </a>
-                    - OpenCore and macOS experiments on non-Apple hardware.
+                    - OpenCore EFI project for a Lenovo IdeaPad Gaming 3
+                    15ARH05 with a Ryzen 5 4600H, including Recovery
+                    and Full EFI setups and Intel AX210 support.
                 </li>
             </ul>
 
-            <h2>Development approach</h2>
+            <h2>Technical Interests & Technologies</h2>
+
             <p>
-                Uses AI-assisted development tools for exploration
-                and prototyping, with code review, testing and refinement.
+                Linux, NixOS, macOS, Hyprland, Noctalia, Zsh,
+                Nix Flakes, OpenCore, EFI, Git, GitHub,
+                backend development, computer systems and
+                hardware troubleshooting.
             </p>
 
-            <h2>Skills</h2>
-            <p>
-                NixOS, Hyprland, Zsh, OpenCore, EFI, macOS, Git and GitHub.
-            </p>
+            <h2>Currently Learning</h2>
+
+            <ul>
+                <li>Rust - learning the fundamentals.</li>
+                <li>SQL - learning basic syntax and database queries.</li>
+            </ul>
+
+            <h2>Contact</h2>
 
             <p>
                 <a href="mailto:tomas.duraes2009@gmail.com">
-                    Contact Tomás Durães
+                    Email
                 </a>
                 ·
                 <a href="https://github.com/quicktommy">
