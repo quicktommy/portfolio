@@ -1,5 +1,5 @@
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Button, TabBar } from "glisse";
 import { SunIcon, MoonIcon } from "@phosphor-icons/react";
 
@@ -64,6 +64,9 @@ const navigation = [
 function App() {
     const [activeTab, setActiveTab] = useState("home");
 
+    const isNavigating = useRef(false);
+    const navigationTimeout = useRef(null);
+
     const [theme, setTheme] = useState(
         () => document.documentElement.dataset.theme || "dark"
     );
@@ -86,6 +89,8 @@ function App() {
 
         const observer = new IntersectionObserver(
             (entries) => {
+                if (isNavigating.current) return;
+
                 const visible = entries
                     .filter((entry) => entry.isIntersecting)
                     .sort(
@@ -105,16 +110,26 @@ function App() {
 
         sections.forEach((section) => observer.observe(section));
 
-        return () => observer.disconnect();
+        return () => {
+            observer.disconnect();
+            clearTimeout(navigationTimeout.current);
+        };
     }, []);
 
     function navigate(value) {
+        clearTimeout(navigationTimeout.current);
+
+        isNavigating.current = true;
         setActiveTab(value);
 
         document.getElementById(value)?.scrollIntoView({
             behavior: "smooth",
             block: "start",
         });
+
+        navigationTimeout.current = setTimeout(() => {
+            isNavigating.current = false;
+        }, 1000);
     }
 
     return (
