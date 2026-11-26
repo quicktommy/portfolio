@@ -1,4 +1,5 @@
 
+import { Analytics } from "@vercel/analytics/react";
 import { useState, useEffect, useRef } from "react";
 import { Button, TabBar } from "glisse";
 import { SunIcon, MoonIcon } from "@phosphor-icons/react";
@@ -374,6 +375,8 @@ function App() {
                     © {new Date().getFullYear()} Tomás Durães
                 </footer>
             </div>
+
+            <Analytics />
         </main>
     );
 }
